@@ -1,0 +1,768 @@
+{
+	"info": {
+		"_postman_id": "9b7606a8-2c23-4cb8-a542-a3324fd1c505",
+		"name": "Types_Variables",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3577167"
+	},
+	"item": [
+		{
+			"name": "Global Variables",
+			"item": [
+				{
+					"name": "Get Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_global}}/api/users?page=2",
+							"host": [
+								"{{url_global}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bhavani\",\r\n    \"job\": \"Software Tester\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_global}}/api/users",
+							"host": [
+								"{{url_global}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sathish\",\r\n    \"job\": \"Pega Developer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_global}}/api/users/599",
+							"host": [
+								"{{url_global}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"599"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_global}}/api/users/599",
+							"host": [
+								"{{url_global}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"599"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Local Variables",
+			"item": [
+				{
+					"name": "Get Request",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Local Varibales\r",
+									"pm.variables.set(\"url_local\", \"https://reqres.in\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/api/users?page=2",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Request",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Local Variables\r",
+									"pm.variables.set(\"url_local\",\"https://reqres.in\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bhavani\",\r\n    \"job\": \"Software Tester\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/users",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Request",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Local Variables\r",
+									"pm.variables.set(\"url_local\",\"https://reqres.in\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sathish\",\r\n    \"job\": \"Pega Developer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/users/599",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"599"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Request",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Local Variables\r",
+									"pm.variables.set(\"url_local\",\"https://reqres.in\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/api/users/599",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"599"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Set & Unset Different variables",
+			"item": [
+				{
+					"name": "Get Request",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Local Varibales\r",
+									"pm.variables.set(\"url_local\", \"https://reqres.in\");\r",
+									"\r",
+									"//Global Variables\r",
+									"pm.globals.set(\"userid_global\",\"2\");\r",
+									"\r",
+									"//Envirorment Variables\r",
+									"//pm.environment.set(\"userid_qa_env\",\"2\");\r",
+									"\r",
+									"//Collection Variables\r",
+									"//pm.collectionVariables.set(\"userid_collection\",\"2\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Before Unsetting I want to print the data of the variables\r",
+									"console.log(pm.globals.get(\"userid_global\"));\r",
+									"console.log(pm.environment.get(\"userid_qa_env\"));\r",
+									"console.log(pm.collectionVariables.get(\"userid_collection\"));\r",
+									"console.log(pm.variables.get(\"url_local\"));\r",
+									"\r",
+									"//Global Variables\r",
+									"pm.globals.unset(\"url_global\");\r",
+									"\r",
+									"//Envirorment Variables\r",
+									"pm.environment.unset(\"userid_qa_env\");\r",
+									"\r",
+									"//Collection Variables\r",
+									"pm.collectionVariables.unset(\"userid_collection\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/api/users?page={{userid_global}}",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "{{userid_global}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Request",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Local Varibales\r",
+									"pm.variables.set(\"url_local\", \"https://reqres.in\");\r",
+									"\r",
+									"//Global Variables\r",
+									"//pm.globals.set(\"userid_global\",\"2\");\r",
+									"\r",
+									"//Envirorment Variables\r",
+									"//pm.environment.set(\"userid_qa_env\",\"2\");\r",
+									"\r",
+									"//Collection Variables\r",
+									"//pm.collectionVariables.set(\"userid_collection\",\"2\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Global Variables\r",
+									"//pm.globals.unset(\"url_global\");\r",
+									"\r",
+									"//Envirorment Variables\r",
+									"//pm.environment.unset(\"userid_qa_env\");\r",
+									"\r",
+									"//Collection Variables\r",
+									"//pm.collectionVariables.unset(\"userid_collection\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bhavani\",\r\n    \"job\": \"Software Tester\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/users",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Request",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Local Varibales\r",
+									"pm.variables.set(\"url_local\", \"https://reqres.in\");\r",
+									"\r",
+									"//Global Variables\r",
+									"//pm.globals.set(\"userid_global\",\"2\");\r",
+									"\r",
+									"//Envirorment Variables\r",
+									"pm.environment.set(\"userid_qa_env\",\"599\");\r",
+									"\r",
+									"//Collection Variables\r",
+									"//pm.collectionVariables.set(\"userid_collection\",\"2\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Global Variables\r",
+									"//pm.globals.unset(\"url_global\");\r",
+									"\r",
+									"//Envirorment Variables\r",
+									"pm.environment.unset(\"userid_qa_env\");\r",
+									"\r",
+									"//Collection Variables\r",
+									"//pm.collectionVariables.unset(\"userid_collection\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sathish\",\r\n    \"job\": \"Pega Developer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_local}}/api/users/{{userid_qa_env}}",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{{userid_qa_env}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Request",
+					"event": [
+						{
+							"listen": "prerequest",
+							"script": {
+								"exec": [
+									"//Local Varibales\r",
+									"pm.variables.set(\"url_local\", \"https://reqres.in\");\r",
+									"\r",
+									"//Global Variables\r",
+									"//pm.globals.set(\"userid_global\",\"2\");\r",
+									"\r",
+									"//Envirorment Variables\r",
+									"//pm.environment.set(\"userid_qa_env\",\"2\");\r",
+									"\r",
+									"//Collection Variables\r",
+									"pm.collectionVariables.set(\"userid_collection\",\"599\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						},
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//Global Variables\r",
+									"//pm.globals.unset(\"url_global\");\r",
+									"\r",
+									"//Envirorment Variables\r",
+									"//pm.environment.unset(\"userid_qa_env\");\r",
+									"\r",
+									"//Collection Variables\r",
+									"pm.collectionVariables.unset(\"userid_collection\");"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_local}}/api/users/{{userid_collection}}",
+							"host": [
+								"{{url_local}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"{{userid_collection}}"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Environment Variables",
+			"item": [
+				{
+					"name": "Get Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_qa_env}}/api/users?page=2",
+							"host": [
+								"{{url_qa_env}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bhavani\",\r\n    \"job\": \"Software Tester\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_qa_env}}/api/users",
+							"host": [
+								"{{url_qa_env}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sathish\",\r\n    \"job\": \"Pega Developer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_qa_env}}}/api/users/599",
+							"host": [
+								"{{url_qa_env}}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"599"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_qa_env}}}/api/users/599",
+							"host": [
+								"{{url_qa_env}}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"599"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Collection Variables",
+			"item": [
+				{
+					"name": "Get Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url_collection}}/api/users?page=2",
+							"host": [
+								"{{url_collection}}"
+							],
+							"path": [
+								"api",
+								"users"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Bhavani\",\r\n    \"job\": \"Software Tester\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_collection}}/api/users",
+							"host": [
+								"{{url_collection}}"
+							],
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Put Request",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Sathish\",\r\n    \"job\": \"Pega Developer\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url_collection}}/api/users/599",
+							"host": [
+								"{{url_collection}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"599"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Request",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url_collection}}/api/users/599",
+							"host": [
+								"{{url_collection}}"
+							],
+							"path": [
+								"api",
+								"users",
+								"599"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url_collection",
+			"value": "https://reqres.in",
+			"type": "string"
+		}
+	]
+}
